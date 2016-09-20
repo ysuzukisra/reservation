@@ -1,0 +1,38 @@
+# FROM my-debian:001
+
+
+>>> docker run -it --name meteor my-debian:001 bash
+
+useradd -m -s /bin/bash -p "$(perl -e 'print crypt("meteor","salt")')" meteor
+apt-get install -y sudo
+echo "meteor ALL=(ALL) ALL" >> /etc/sudoers
+echo "LANG=ja_JP.UTF-8" >> ~meteor/.bashrc
+echo "LANGUAGE=ja_JP.UTF-8" >> ~meteor/.bashrc
+echo "LC_ALL=C.UTF-8" >> ~meteor/.bashrc
+echo "export LANG LANGUAGE LC_ALL" >> ~meteor/.bashrc
+sudo -u meteor sh -c 'curl https://install.meteor.com/ | sh'
+# 000
+
+>>> docker commit meteor meteor:000
+>>> docker rm meteor
+>>> docker run -it --name meteor meteor:000 bash
+
+cat << "_EOF_" > /entry-point.sh
+su meteor bash -c 'cd && pwd && . .bashrc && env && cd app && (MONGO_URL="mongodb://${MONGODB_PORT_27001_TCP_ADDR}:${MONGODB_PORT_27001_TCP_PORT}/yas" meteor)'
+_EOF_
+sudo -u meteor sh -c 'cd && meteor create app'
+# 001
+
+>>> docker commit meteor meteor:001
+>>> docker rm meteor
+
+#docker run -d --name meteor -v C:\Users\yas\Documents\docker\meteor:/mnt -p 3010:3000 -p 20022:22 --link mongodb:mongodb meteor:001 /bin/bash /entry-point.sh
+docker run -d --name meteor -v C:\Users\yas\Documents\docker\meteor:/mnt -p 3010:3000 -p 20022:22 --link mongodb:mongodb meteor:001 /bin/bash /entry-point.sh
+
+(ŠJ”­)
+docker exec -it meteor su - meteor
+
+
+meteor add isotope:isotope
+meteor add mizzao:jquery-ui
+meteor add twbs:bootstrap

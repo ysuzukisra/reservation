@@ -1,0 +1,83 @@
+[
+{
+    "_id" : ObjectId("57d3180bdda1565e57ad8462"),
+    "reservation" : {
+        "name" : "AAクライアント",
+        "description" : "XXテスト用PC"
+    },
+    "users" : [ 
+        "yamada", 
+        "satho"
+    ],
+    "resources" : [ 
+        {
+            "resource" : "PC1",
+            "description" : {
+                "ip" : "111.11.1.1"
+            },
+        }, 
+        {
+            "resource" : "PC2",
+            "description" : {
+                "ip" : "111.11.1.2"
+            },
+        }, 
+        {
+            "resource" : "PC3",
+            "description" : {
+                "ip" : "111.11.1.15"
+            },
+        }
+    ]
+}
+
+,
+{
+    "_id" : ObjectId("57d31b8f5a3ed67842a2e011"),
+    "uid" : "yas",
+    "name" : "Y.Suzuki"
+}
+
+,
+{
+    "_id" : ObjectId("57d31dcf5a3ed67842a2e013"),
+    "uid" : "yamada",
+    "name" : "Taro Yamada"
+}
+
+,
+{
+    "_id" : ObjectId("57d31df15a3ed67842a2e014"),
+    "uid" : "satho",
+    "name" : "Shinji Satoh"
+}
+
+,
+{
+    "_id" : ObjectId("57d32ceb5a3ed67842a2e015"),
+    "reservation" : {
+        "name" : "会議室予約"
+    },
+    "users" : [ 
+        "yas", 
+        "satho"
+    ],
+    "resources" : [ 
+        {
+            "resource" : "ブース１",
+            "description" : {
+                "tel" : "8001",
+                "capacity" : "4人"
+            },
+        }, 
+        {
+            "resource" : "ミーティングスペース",
+            "description" : {
+                "tel" : "8002",
+                "capacity" : "12人",
+                "Facility" : "TV会議、ホワイトボード"
+            },
+        }
+    ]
+}
+]
