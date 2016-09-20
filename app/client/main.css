@@ -1,0 +1,109 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+}
+
+/* ---- isotope ---- */
+
+.reservation-grid {
+  width: 95%;
+  background: #E3C5BB;
+  border: 1px solid #DDA3B2;
+}
+
+/* clear fix */
+.reservation-grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .reservation-item ---- */
+
+.reservation-item {
+  position: relative;
+  float: left;
+  width: 20%;
+  height: 100px;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #FFADC6;
+  background: #DFE2CF;
+  color: #764248;
+}
+
+.reservation-item > * {
+  margin: 0;
+  padding: 0;
+}
+
+.reservation-item .name {
+  position: absolute;
+
+  left: 10px;
+  top: 60px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 12px;
+  font-weight: normal;
+}
+/* ---- .resource-item ---- */
+
+.resource-item {
+  position: relative;
+  float: left;
+  width: 20%;
+  height: 100px;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #FFADC6;
+  background: #DFE2CF;
+  color: #764248;
+}
+
+.resource-item > * {
+  margin: 0;
+  padding: 0;
+}
+
+.resource-item .name {
+  position: absolute;
+
+  left: 10px;
+  top: 60px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+/* ---- .user-item ---- */
+
+.user-item {
+  position: relative;
+  float: left;
+  width: 20%;
+  height: 100px;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #1F1300;
+  background: #C68E49;
+  color: #DFD6A7;
+}
+
+.user-item > * {
+  margin: 0;
+  padding: 0;
+}
+
+.user-item .name {
+  position: absolute;
+
+  left: 10px;
+  top: 60px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 12px;
+  font-weight: normal;
+}

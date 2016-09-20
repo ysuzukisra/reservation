@@ -1,0 +1,59 @@
+<head>
+  <title>Reservations</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      {{#if curReservation}}
+        <h1>Reservation</h1>
+      {{else}}
+        <h1>Reservation List</h1>
+      {{/if}}
+    </header>
+
+    {{> reservation}}
+
+    {{#if curReservation}}
+      {{> resources curReservation}}
+      {{> users curReservation}}
+    {{/if}}
+  </div>
+</body>
+
+<template name="reservation">
+  <div class="reservation-grid btn-group" data-toggle="buttons">
+    {{#each reservations}}
+      <div class="reservation-item btn btn-defalut" data-_id="{{_id._str}}">
+        <span class="reservation-name">{{reservation.name}}</span>
+        <hr />
+        <span class="reservation-description">{{reservation.description}}</span>
+      </div>
+    {{/each}}
+  </div>
+</template>
+
+<template name="resources">
+  <div class="resource-grid">
+    {{#each resources}}
+      {{#each (getResource ../reservation resource_ref)}}
+        <div class="resource-item" data-_id="{{_id._str}}">
+          <div class="resource-name">{{resource}}</div>
+          <div class="resource-description">{{description}}</div>
+        </div>
+      {{/each}}
+    {{/each}}
+  </div>
+</template>
+
+<template name="users">
+  <div class="user-grid">
+    {{#each uid_ref in users}}
+      {{#each (getUser uid_ref)}}
+        <div class="user-item" data-_id="{{_id._str}}">
+          <div class="user-name">{{name}} &lt;{{uid}}&gt;</div>
+        </div>
+      {{/each}}
+    {{/each}}
+  </div>
+</template>
