@@ -1,0 +1,3 @@
+node_modules/
+app/.meteor
+app/package.json
