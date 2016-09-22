@@ -1,8 +1,8 @@
 [
   {
     "reservation": {
-      "name": "AAƒNƒ‰ƒCƒAƒ“ƒg",
-      "description": "XXƒeƒXƒg—pPC"
+      "name": "AAã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆ",
+      "description": "XXãƒ†ã‚¹ãƒˆç”¨PC"
     },
     "users": [
       "yamada",
@@ -34,7 +34,7 @@
   },
   {
     "reservation": {
-      "name": "‰ï‹cº—\–ñ"
+      "name": "ä¼šè­°å®¤äºˆç´„"
     },
     "users": [
       "yas",
@@ -42,36 +42,36 @@
     ],
     "resources": [
       {
-        "resource_ref": "ƒu[ƒX‚P"
+        "resource_ref": "ãƒ–ãƒ¼ã‚¹ï¼‘"
       },
       {
-        "resource_ref": "ƒ~[ƒeƒBƒ“ƒOƒXƒy[ƒX"
+        "resource_ref": "ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã‚¹ãƒšãƒ¼ã‚¹"
       }
     ]
   },
   {
     "resource": "PC2",
-    "reserve_from": "AAƒNƒ‰ƒCƒAƒ“ƒg",
+    "reserve_from": "AAã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆ",
     "description": "ip: 111.11.1.2"
   },
   {
     "resource": "PC1",
-    "reserve_from": "AAƒNƒ‰ƒCƒAƒ“ƒg",
+    "reserve_from": "AAã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆ",
     "description": "ip: 111.11.1.1"
   },
   {
     "resource": "PC3",
-    "reserve_from": "AAƒNƒ‰ƒCƒAƒ“ƒg",
+    "reserve_from": "AAã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆ",
     "description": "ip: 111.11.1.15"
   },
   {
-    "resource": "ƒu[ƒX‚P",
-    "reserve_from": "‰ï‹cº—\–ñ",
-    "description": "“àü:8002A12lATV‰ï‹cAƒzƒƒCƒgƒ{[ƒh"
+    "resource": "ãƒ–ãƒ¼ã‚¹ï¼‘",
+    "reserve_from": "ä¼šè­°å®¤äºˆç´„",
+    "description": "å†…ç·š:8002ã€12äººã€TVä¼šè­°ã€ãƒ›ãƒ¯ã‚¤ãƒˆãƒœãƒ¼ãƒ‰"
   },
   {
-    "resource": "ƒ~[ƒeƒBƒ“ƒOƒXƒy[ƒX",
-    "reserve_from": "‰ï‹cº—\–ñ",
-    "description": "“àü:8001A4l"
+    "resource": "ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã‚¹ãƒšãƒ¼ã‚¹",
+    "reserve_from": "ä¼šè­°å®¤äºˆç´„",
+    "description": "å†…ç·š:8001ã€4äºº"
   }
 ]

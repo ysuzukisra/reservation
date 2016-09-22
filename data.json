@@ -2,8 +2,8 @@
 {
     "_id" : ObjectId("57d3180bdda1565e57ad8462"),
     "reservation" : {
-        "name" : "AAƒNƒ‰ƒCƒAƒ“ƒg",
-        "description" : "XXƒeƒXƒg—pPC"
+        "name" : "AAã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆ",
+        "description" : "XXãƒ†ã‚¹ãƒˆç”¨PC"
     },
     "users" : [ 
         "yamada", 
@@ -56,7 +56,7 @@
 {
     "_id" : ObjectId("57d32ceb5a3ed67842a2e015"),
     "reservation" : {
-        "name" : "‰ï‹cº—\–ñ"
+        "name" : "ä¼šè­°å®¤äºˆç´„"
     },
     "users" : [ 
         "yas", 
@@ -64,18 +64,18 @@
     ],
     "resources" : [ 
         {
-            "resource" : "ƒu[ƒX‚P",
+            "resource" : "ãƒ–ãƒ¼ã‚¹ï¼‘",
             "description" : {
                 "tel" : "8001",
-                "capacity" : "4l"
+                "capacity" : "4äºº"
             },
         }, 
         {
-            "resource" : "ƒ~[ƒeƒBƒ“ƒOƒXƒy[ƒX",
+            "resource" : "ãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã‚¹ãƒšãƒ¼ã‚¹",
             "description" : {
                 "tel" : "8002",
-                "capacity" : "12l",
-                "Facility" : "TV‰ï‹cAƒzƒƒCƒgƒ{[ƒh"
+                "capacity" : "12äºº",
+                "Facility" : "TVä¼šè­°ã€ãƒ›ãƒ¯ã‚¤ãƒˆãƒœãƒ¼ãƒ‰"
             },
         }
     ]
