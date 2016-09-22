@@ -1,97 +1,135 @@
-[
-  {
-    "reservation": {
-      "name": "AAクライアント",
-      "description": "XXテスト用PC"
-    },
-    "users": [
-      "yamada",
-      "yas",
-      "satho",
-      "honda"
-    ],
-    "resources": [
-      {
-        "resource_ref": "PC1"
-      },
-      {
-        "resource_ref": "PC2"
-      },
-      {
-        "resource_ref": "PC3"
-      },
-      {
-        "resource_ref": "PC4"
-      }
-    ]
-  },
-  {
-    "uid": "yas",
-    "name": "Y.Suzuki"
-  },
-  {
-    "uid": "yamada",
-    "name": "Taro Yamada"
-  },
-  {
-    "uid": "satho",
-    "name": "Shinji Satoh"
-  },
-  {
-    "uid": "suzuki",
-    "name": "Hanako Suzuki"
-  },
-  {
-    "uid": "honda",
-    "name": "Tsubasa Honda"
-  },
-  {
-    "reservation": {
-      "name": "会議室予約"
-    },
-    "users": [
-      "yas",
-      "satho"
-    ],
-    "resources": [
-      {
-        "resource_ref": "ブース１"
-      },
-      {
-        "resource_ref": "ミーティングスペース"
-      }
-    ]
-  },
-  {
-    "resource": "PC2",
-    "reserve_from": "AAクライアント",
-    "description": "ip: 111.11.1.2"
-  },
-  {
-    "resource": "PC1",
-    "reserve_from": "AAクライアント",
-    "reserve_by": "honda",
-    "description": "ip: 111.11.1.1"
-  },
-  {
-    "resource": "PC3",
-    "reserve_from": "AAクライアント",
-    "description": "ip: 111.11.1.15"
-  },
-  {
-    "resource": "PC4",
-    "reserve_from": "AAクライアント",
-    "reserve_by": "yas",
-    "description": "ip: 111.11.1.16"
-  },
-  {
-    "resource": "ブース１",
-    "reserve_from": "会議室予約",
-    "description": "内線:8002、12人、TV会議、ホワイトボード"
-  },
-  {
-    "resource": "ミーティングスペース",
-    "reserve_from": "会議室予約",
-    "description": "内線:8001、4人"
-  }
-]
+[{
+	"_id": {
+		"$oid": "57e362c0a64fd916d7225aaa"
+	},
+	"reservation": {
+		"name": "AAクライアント",
+		"description": "XXテスト用PC"
+	},
+	"users": [
+		"yamada",
+		"yas",
+		"satho",
+		"honda"
+	],
+	"resources": [
+		{
+			"resource_ref": "PC1"
+		},
+		{
+			"resource_ref": "PC2"
+		},
+		{
+			"resource_ref": "PC3"
+		},
+		{
+			"resource_ref": "PC4"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "57e362c0a64fd916d7225aab"
+	},
+	"uid": "yas",
+	"name": "Y.Suzuki"
+},
+{
+	"_id": {
+		"$oid": "57e362c0a64fd916d7225aac"
+	},
+	"uid": "yamada",
+	"name": "Taro Yamada"
+},
+{
+	"_id": {
+		"$oid": "57e362c0a64fd916d7225aad"
+	},
+	"uid": "satho",
+	"name": "Shinji Satoh"
+},
+{
+	"_id": {
+		"$oid": "57e362c0a64fd916d7225aae"
+	},
+	"uid": "suzuki",
+	"name": "Hanako Suzuki"
+},
+{
+	"_id": {
+		"$oid": "57e362c0a64fd916d7225aaf"
+	},
+	"uid": "honda",
+	"name": "Tsubasa Honda"
+},
+{
+	"_id": {
+		"$oid": "57e362c0a64fd916d7225ab0"
+	},
+	"reservation": {
+		"name": "会議室予約"
+	},
+	"users": [
+		"yas",
+		"satho"
+	],
+	"resources": [
+		{
+			"resource_ref": "ブース１"
+		},
+		{
+			"resource_ref": "ミーティングスペース"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "57e362c0a64fd916d7225ab1"
+	},
+	"resource": "PC2",
+	"reserve_from": "AAクライアント",
+	"description": "ip: 111.11.1.2"
+},
+{
+	"_id": {
+		"$oid": "57e362c0a64fd916d7225ab2"
+	},
+	"resource": "PC1",
+	"reserve_from": "AAクライアント",
+	"reserve_by": "honda",
+	"description": "ip: 111.11.1.1"
+},
+{
+	"_id": {
+		"$oid": "57e362c0a64fd916d7225ab3"
+	},
+	"resource": "PC3",
+	"reserve_from": "AAクライアント",
+	"description": "ip: 111.11.1.15"
+},
+{
+	"_id": {
+		"$oid": "57e362c0a64fd916d7225ab4"
+	},
+	"resource": "PC4",
+	"reserve_from": "AAクライアント",
+	"reserve_by": "yas",
+	"description": "ip: 111.11.1.16"
+},
+{
+	"_id": {
+		"$oid": "57e362c0a64fd916d7225ab5"
+	},
+	"resource": "ブース１",
+	"reserve_from": "会議室予約",
+	"description": "内線:8002、12人、TV会議、ホワイトボード"
+},
+{
+	"_id": {
+		"$oid": "57e362c0a64fd916d7225ab6"
+	},
+	"resource": "ミーティングスペース",
+	"reserve_from": "会議室予約",
+	"description": "内線:8001、4人"
+}]
+
