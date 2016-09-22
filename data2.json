@@ -19,6 +19,9 @@
       },
       {
         "resource_ref": "PC3"
+      },
+      {
+        "resource_ref": "PC4"
       }
     ]
   },
