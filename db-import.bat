@@ -1,0 +1,1 @@
+docker run -it --rm --link meteor_mongod_1 -v "C:\Users\yas\Documents\docker\meteor:/d" --network meteor_default mongo mongoimport -h mongod -d yas -c reservations --drop --jsonArray --file /d/data2.json
