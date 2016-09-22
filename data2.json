@@ -6,7 +6,9 @@
     },
     "users": [
       "yamada",
-      "satho"
+      "yas",
+      "satho",
+      "honda"
     ],
     "resources": [
       {
@@ -33,6 +35,14 @@
     "name": "Shinji Satoh"
   },
   {
+    "uid": "suzuki",
+    "name": "Hanako Suzuki"
+  },
+  {
+    "uid": "honda",
+    "name": "Tsubasa Honda"
+  },
+  {
     "reservation": {
       "name": "会議室予約"
     },
@@ -57,12 +67,19 @@
   {
     "resource": "PC1",
     "reserve_from": "AAクライアント",
+    "reserve_by": "honda",
     "description": "ip: 111.11.1.1"
   },
   {
     "resource": "PC3",
     "reserve_from": "AAクライアント",
     "description": "ip: 111.11.1.15"
+  },
+  {
+    "resource": "PC4",
+    "reserve_from": "AAクライアント",
+    "reserve_by": "yas",
+    "description": "ip: 111.11.1.16"
   },
   {
     "resource": "ブース１",
